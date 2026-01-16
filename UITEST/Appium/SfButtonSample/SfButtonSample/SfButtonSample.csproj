@@ -84,10 +84,7 @@
 	  <ApplicationId>com.companyname.SfButtonSample</ApplicationId>
 	</PropertyGroup>
 
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	  <DefineConstants>TRACE;DEBUG;NET;NET8_0;NETCOREAPP;ENABLE_TEST_CLOUD;</DefineConstants>
-	  <WarningLevel>4</WarningLevel>
-	</PropertyGroup>
+
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
@@ -218,10 +215,5 @@
 	  </MauiXaml>
 	</ItemGroup>
 
-<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-ios'">
-  <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.23.2" />
-</ItemGroup>
-<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-maccatalyst'">
-  <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.23.2" />
-</ItemGroup>
+
 </Project>
