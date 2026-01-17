@@ -6,6 +6,15 @@ using Syncfusion.UITestHelpers.Screenshot;
 
 namespace SfButtonScripts
 {
+	#if ANDROID
+    [TestFixture(TestDevice.Android)]
+    #elif IOS
+    [TestFixture(TestDevice.iOS)]
+    #elif MACOS
+    [TestFixture(TestDevice.Mac)]
+    #elif WINDOWS
+    [TestFixture(TestDevice.Windows)]
+    #endif
     public class Properties : BaseTest
     {
         public Properties(TestDevice testDevice) : base(testDevice)
