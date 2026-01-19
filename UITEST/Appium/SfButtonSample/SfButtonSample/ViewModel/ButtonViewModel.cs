@@ -4,7 +4,7 @@ using Microsoft.Maui;
 using Syncfusion.Maui.Toolkit.Buttons;
 using Syncfusion.Maui.Toolkit.Chips;
 
-namespace SfButtonSample.ViewModel;
+namespace SfButtonSample;
 
 public class ButtonViewModel : INotifyPropertyChanged
 {

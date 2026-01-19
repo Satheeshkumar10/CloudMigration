@@ -115,14 +115,10 @@ namespace UITests.Shared
         }
 
         // Common helpers
-        public void Basicsbutton(string filename)
+        public void Basicsbutton()
         {
-            App.WaitForElement("Home", timeout: TimeSpan.FromSeconds(50));
-            App.EnterText("editor", filename); 
-            App.WaitForElement("Home", timeout: TimeSpan.FromSeconds(50));
-            App.Tap("btn");
-            Thread.Sleep(5000);
-            App.WaitForElement("Features", timeout: TimeSpan.FromSeconds(50));
+            Thread.Sleep(5000); 
+            App.WaitForElement("Features", timeout: TimeSpan.FromSeconds(15));
         }
 
         // Strongly recommended to ensure runner cleanup

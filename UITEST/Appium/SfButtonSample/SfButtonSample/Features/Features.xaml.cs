@@ -1,4 +1,4 @@
-namespace SfButtonSample.Features;
+namespace SfButtonSample;
 
 public partial class Features : ContentPage
 {

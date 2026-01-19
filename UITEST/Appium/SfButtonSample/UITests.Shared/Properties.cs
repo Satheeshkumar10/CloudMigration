@@ -26,7 +26,7 @@ namespace SfButtonScripts
         [Category("name property")]
         public void name_1()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.ClearText("name");
             App.EnterText("name", "SfButton");
             App.DismissKeyboard();
@@ -38,7 +38,7 @@ namespace SfButtonScripts
         [Category("text color property")]
         public void textcolor_1()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.Tap("TextColor");
         #if ANDROID || WINDOWS || MACOS
             App.Tap("Green");
@@ -53,7 +53,7 @@ namespace SfButtonScripts
         [Category("text color property")]
         public void textcolor_2()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.Tap("TextColor");
         #if ANDROID || WINDOWS || MACOS
             App.Tap("Black");
@@ -68,7 +68,7 @@ namespace SfButtonScripts
         [Category("text color property")]
         public void textcolor_3()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.Tap("TextColor");
         #if ANDROID || WINDOWS || MACOS
             App.Tap("Yellow");
@@ -83,7 +83,7 @@ namespace SfButtonScripts
         [Category("text color property")]
         public void textcolor_4()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.Tap("TextColor");
         #if ANDROID || WINDOWS || MACOS
             App.Tap("Orange");
@@ -98,7 +98,7 @@ namespace SfButtonScripts
         [Category("text color property")]
         public void textcolor_5()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.Tap("TextColor");
         #if ANDROID || WINDOWS || MACOS
             App.Tap("Blue");
@@ -113,7 +113,7 @@ namespace SfButtonScripts
         [Category("show icon property")]
         public void showicon_1()
         {
-            Basicsbutton("Features");
+            Basicsbutton();
             App.Tap("ShowIcon");
             Thread.Sleep(2000);
             TakeAndCompareScreenshot("showicon_1");

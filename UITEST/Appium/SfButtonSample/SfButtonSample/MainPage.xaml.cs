@@ -10,33 +10,16 @@ public partial class MainPage : ContentPage
 	{
         InitializeComponent();
 	}
-    string name;
-    private void Editor_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        name = (sender as Entry).Text;
-    }
+    //string name;
+    //private void Editor_TextChanged(object sender, TextChangedEventArgs e)
+    //{
+    //    name = (sender as Entry).Text;
+    //}
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-        try
-        {
-            var type = Type.GetType("SfButtonSample.SBSample." + name);
-            Navigation.PushAsync(Activator.CreateInstance(type) as ContentPage);
-        }
-        catch
-        {
-            try
-            {
-                var type = Type.GetType("SfButtonSample.Features." + name);
-                Navigation.PushAsync(Activator.CreateInstance(type) as ContentPage);
-            }
-            catch
-            {
-                var type = Type.GetType("SfButtonSample.Bugs." + name);
-                Navigation.PushAsync(Activator.CreateInstance(type) as ContentPage);
+      //  await Navigation.PushAsync(new Binding.Features());
 
-            }
-        }
     }
 }
 
