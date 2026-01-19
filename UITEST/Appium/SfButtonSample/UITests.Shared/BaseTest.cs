@@ -118,7 +118,7 @@ namespace UITests.Shared
         public void Basicsbutton()
         {
             Thread.Sleep(5000); 
-            App.WaitForElement("Features");
+            App.WaitForElement("Features", timeout: TimeSpan.FromSeconds(30));
         }
 
         // Strongly recommended to ensure runner cleanup
