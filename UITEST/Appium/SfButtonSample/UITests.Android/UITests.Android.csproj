@@ -11,6 +11,12 @@
 	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
 		<DefineConstants>$(DefineConstants);ANDROID</DefineConstants>
 	</PropertyGroup>
+	
+	
+<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  <DefineConstants>$(DefineConstants);ANDROID</DefineConstants>
+</PropertyGroup>
+
 
 	<ItemGroup>
 		<PackageReference Include="Appium.WebDriver" Version="5.0.0" />
