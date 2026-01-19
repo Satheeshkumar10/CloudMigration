@@ -1,4 +1,3 @@
-
 using NUnit.Framework;
 using Syncfusion.UITestHelpers.Appium;
 using Syncfusion.UITestHelpers.Core;
@@ -118,9 +117,12 @@ namespace UITests.Shared
         // Common helpers
         public void Basicsbutton(string filename)
         {
-            App.EnterText("editor", filename);
+            App.WaitForElement("Home", timeout: TimeSpan.FromSeconds(50));
+            App.EnterText("editor", filename); 
+            App.WaitForElement("Home", timeout: TimeSpan.FromSeconds(50));
             App.Tap("btn");
             Thread.Sleep(5000);
+            App.WaitForElement("Features", timeout: TimeSpan.FromSeconds(50));
         }
 
         // Strongly recommended to ensure runner cleanup
